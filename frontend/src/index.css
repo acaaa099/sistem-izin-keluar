@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import "tailwindcss";
+
+:root {
+  font-family: "Poppins", sans-serif;
+
+  --color-primary: #5A81FA;
+  --color-secondary: #2B308B;
+  --color-dark: #1F1F1F;
+  --color-gray: #696E82;
+  --color-blue-gray: #A8B1CE;
+  --color-very-light: #F8F9FD;
+  --color-light-blue: #CEDEFF;
+  --color-lavender: #F2F4FF;
+  --color-white: #FFFFFF;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Reset dimasukkan ke @layer base agar class Tailwind
+   (mx-auto, px-*, py-*, mt-*, text-sm, font-semibold, dll)
+   tetap bisa menimpanya. */
+@layer base {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  button,
+  input,
+  textarea,
+  select {
+    font: inherit;
+  }
+}
+
+html,
+body,
+#root {
+  min-width: 320px;
+  min-height: 100%;
+  width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #F8F9FD;
+  color: #1F1F1F;
+}

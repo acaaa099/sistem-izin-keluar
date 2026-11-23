@@ -1,0 +1,60 @@
+﻿# Environment dan rahasia
+.env
+.env.*
+!.env.example
+!.env.production.example
+
+# Dependensi
+**/vendor/
+**/node_modules/
+
+# Hasil build dan cache
+**/dist/
+**/public/build/
+**/.phpunit.result.cache
+**/.phpunit.cache/
+**/coverage/
+
+# Log dan file sementara
+*.log
+.DS_Store
+Thumbs.db
+*.local
+
+# Editor
+.vscode/
+.idea/
+
+# Backup lokal — jangan masukkan otomatis
+backup-sebelum-menu-ketua/
+**/_backup_*/
+
+
+# File cadangan kode lokal
+*.bak
+*.bak-*
+*.before_*
+*.before-*
+*.old
+*.orig
+
+# File bantu pemulihan lokal
+backend/restore_nip_stage.php
+
+# Dokumen internal instruksi lokal
+backend/AGENTS.md
+backend/CLAUDE.md
+
+
+
+# Semua variasi file cadangan
+*.bak*
+*.before*
+*.old
+*.orig
+
+Databases-sikat/
+backend/env.example.mysql-pn
+backend/bootstrap/env.example.mysql-pn
+backend/public/env.example.mysql-pn
+/backend/database/seeders/OfficialUserSeeder.php
